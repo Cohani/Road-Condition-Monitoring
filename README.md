@@ -53,13 +53,13 @@ docker restart rcm-web
 ## Development
 Here are some information about continuing the development of this project.
 
-### test/
+### [test/](test/)
 Tests for checking backend response data for specific filters.
 
-### app/client
+### [app/client](app/client)
 Source code for the web frontend.
 
-### app/server
+### [app/server](app/server)
 Source code for the `nodejs` backend.
 
 
