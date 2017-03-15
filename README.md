@@ -54,13 +54,13 @@ docker restart rcm-web
 Here are some information about continuing the development of this project.
 
 ### test/
-Here lies some scripts for testing the backend.
+Tests for checking backend response data for specific filters.
 
 ### app/client
-This is where all the frontend code is.
+Source code for the web frontend.
 
-### /app/server
-This is where all the backend code is.
+### app/server
+Source code for the `nodejs` backend.
 
 
 ###### Build by Emil Kitti, Rasmus Hartman, Tobias Axelsson, Oscar Saándström, Anton Lundqvist and Johan Kannel.
