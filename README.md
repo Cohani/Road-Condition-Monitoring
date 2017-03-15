@@ -18,14 +18,15 @@ yum/dnf install git docker
 ```
 
 ## Installation
+The installation of the web app is done by using docker. Currently all the containers are created seperately, this should probably be changed into a single docker-compose file, but that's how it is. For now.
 
-#### Default
+### Default
 ```
 git clone https://github.com/kitzin/Road-Condition-Monitoring
 cd Road-Condition-Monitoring && ./deploy
 ```
 
-#### Development
+### Development
 ```
 git clone https://github.com/kitzin/Road-Condition-Monitoring
 cd Road-Condition-Monitoring && ./deploy-dev
@@ -35,13 +36,13 @@ Anything changed in the frontend will not require a restart of the app.
 If you change anything in the backend, you will have to restart the app via docker.
 To restart the container run `docker restart rcm-web` in your terminal.
 
-#### For all
+### For all
 The database import is done under `scripts/` the `scripts/connection.js` connects to the remote SQL database. The host, user, password, and database needs to be entered there for the import to work.
 
 
 ## Error
 Here are some errors that might happen.
-#### Database pull
+### Database pull
 If the database extration to elasticsearch fails, then run `docker start -a rcm-pull`.
 
 ## Restart Application
@@ -50,7 +51,16 @@ docker restart rcm-web
 ```
 
 ## Development
+Here are some information about continuing the development of this project.
 
+### test/
+Here lies some scripts for testing the backend.
+
+### app/client
+This is where all the frontend code is.
+
+### /app/server
+This is where all the backend code is.
 
 
 ###### Build by Emil Kitti, Rasmus Hartman, Tobias Axelsson, Oscar Saándström, Anton Lundqvist and Johan Kannel.
